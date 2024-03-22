@@ -4,7 +4,7 @@
 #include <filesystem>
 using namespace std;
 namespace fs = boost::filesystem;
-class Clear_kash
+class Clear_cash
 {
 public:
 	void clear_temp(string);

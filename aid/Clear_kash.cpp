@@ -1,5 +1,5 @@
 #include "Clear_kash.h"
-void Clear_kash::clear_temp(string UserName )
+void Clear_cash::clear_temp(string UserName )
 {
 	fs::path root{ "C:\\Users" };
 	fs::path Derectory{ "AppData\\Local\\Temp"};
@@ -26,7 +26,7 @@ void Clear_kash::clear_temp(string UserName )
 	}
 
 }
-void Clear_kash::clear_TEMP()
+void Clear_cash::clear_TEMP()
 {
 	fs::directory_iterator begin("C:\\Windows\\Temp");
 	fs::directory_iterator end;
@@ -49,7 +49,7 @@ void Clear_kash::clear_TEMP()
 		}
 	}
 }
-void Clear_kash::clear_prefetch()
+void Clear_cash::clear_prefetch()
 {
 	fs::directory_iterator begin("C:\\Windows\\Prefetch");
 	fs::directory_iterator end;
@@ -73,7 +73,7 @@ void Clear_kash::clear_prefetch()
 	}
 }
 
-void Clear_kash::stop_sc()
+void Clear_cash::stop_sc()
 {
 	system("SC CONFIG HvHost start= disabled");
 	system("SC CONFIG vmicheartbeat start= disabled");

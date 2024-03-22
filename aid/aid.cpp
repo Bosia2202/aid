@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-	Clear_kash ck;
+	Clear_cash clear_cash;
 	char choose;
 	setlocale(LC_ALL, "RUS");
 	char TempUserName[103];
@@ -13,11 +13,11 @@ int main()
 	size = sizeof(TempUserName);
 	GetUserNameA(TempUserName, &size);
 	string UserName = TempUserName;
-	cout << "Добро пожаловать в проект ГЕНИЯ Василенко Дениса" << endl<<"AID version 1.0\n";
+	cout << "Добро пожаловать в программу для улучшения произодительности вашего ПК" << endl<<"AID version 1.0\n";
 	while (tr == true)
 	{
-		cout << "\nЧто ты хочешь сделать?" << "\n1.Посмотреть параметры пк" << "\n2.Удалить Кэш(быстрая очистка)" << "\n3.Отключить ресурсоёмкие службы"
-			<< "\n4.Выйти" << "\n\nТы выбрал: ";
+		cout << "\nЧто вы хотите сделать?" << "\n1.Посмотреть параметры ПК" << "\n2.Удалить Кэш(быстрая очистка)" << "\n3.Отключить ресурсоёмкие службы"
+			<< "\n4.Выйти" << "\n\nВы выбрали: ";
 		cin >> choose;
 		switch (choose)
 		{
